@@ -1,2 +1,2 @@
-# gb-basics-python-prictice-videos
+# gb-basics-python-videos
 
