@@ -20,3 +20,10 @@ str_test = "it is so cool"
 print("i am learning python)", str_test, sep="\n")
 
 print('i am so \n excited \t lift this weights', end=';')
+
+in_users = input("\nenter your name")
+print("your name is ", in_users)
+
+print(type(in_users))
+
+age = input("how old are you? ")
