@@ -17,4 +17,10 @@ days_month = {
 date = date.split('.')
 print(days_month['days'][int(date[0]) - 1], days_month['month'][int(date[1]) - 1], date[2], "года")
 
-print()
+my_list_1 = [2, 2, 5, 12, 8, 2, 12]
+my_list_1_sorted = []
+
+for x in my_list_1:
+    if my_list_1.count(x) == 1:
+        my_list_1_sorted.append(x)
+print(my_list_1_sorted)
