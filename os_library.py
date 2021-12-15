@@ -11,3 +11,4 @@ new_path = os.path.join(os.getcwd(), 'new_test_file_os_path')
 print(new_path)
 try: os.mkdir(new_path)
 except:pass
+
