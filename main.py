@@ -1,3 +1,11 @@
+from hospital.h import get_main
+from hospital.patients.index import get_index
+
+get_index()
+
+get_main()
+
+
 name = 2
 print(name)
 
