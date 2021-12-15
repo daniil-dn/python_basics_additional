@@ -22,5 +22,7 @@ def rm_several_dirs(count):
         except:
             pass
 
+
 def rand_list_item(list_):
-    return random.choice(list_)
+    if list_:
+        return random.choice(list_)
