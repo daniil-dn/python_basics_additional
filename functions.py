@@ -3,4 +3,15 @@ def get_sep(sep_sign, sep_len):
     return sep_sign * sep_len
 
 
-print(get_sep('*', 10))
+def hello(who):
+    print("hello", who)
+
+
+hello('max')
+
+
+def greeting(who="Nobody", say= "hello"):
+    print(say, who)
+
+
+greeting(say='who are you?', who="leo")
