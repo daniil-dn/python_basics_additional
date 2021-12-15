@@ -14,6 +14,7 @@ days_month = {
     "month": ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь',
               'декабрь'],
 }
+
 date = date.split('.')
 print(days_month['days'][int(date[0]) - 1], days_month['month'][int(date[1]) - 1], date[2], "года")
 
