@@ -1,5 +1,7 @@
 import sys, os, random
 
+if __name__ == "__main__":
+    print('i am main')
 
 def mk_several_dirs(count):
     current_path = os.getcwd()
@@ -26,3 +28,5 @@ def rm_several_dirs(count):
 def rand_list_item(list_):
     if list_:
         return random.choice(list_)
+
+# rm_several_dirs(5)
