@@ -1,4 +1,4 @@
-import sys, os
+import sys, os, random
 
 
 def mk_several_dirs(count):
@@ -22,3 +22,5 @@ def rm_several_dirs(count):
         except:
             pass
 
+def rand_list_item(list_):
+    return random.choice(list_)
