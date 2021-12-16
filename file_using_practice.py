@@ -21,3 +21,8 @@ with open('first.txt', 'r') as file:
         # pass
         print(line.replace('\n', ' '))
 f_1.close()
+
+with open('first.txt', 'r') as f:
+    for line in f:
+        print(line)
+
