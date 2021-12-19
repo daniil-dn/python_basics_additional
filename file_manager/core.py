@@ -1,5 +1,6 @@
 import os
 import shutil
+import datetime
 
 
 def create_file(name, text=None):
@@ -37,10 +38,14 @@ def copy_file(name, new_name):
         shutil.copy(name, new_name)
 
 
-if __name__ == '__main__':
-    create_file('text.dat')
-    create_folder('new_f')
-    get_list(folders_only=True)
-    # copy_file('new_f', './new/new')
-    copy_file('text.dat', './new/tex2t.dat')
+def save_log(message):
+    current_time = datetime.datetime.now()
+    res = f'{current_time} - {message}'
+    with open('log.txt', 'a', encoding="utf-8") as f:
+        f.write(res + '\n')
 
+    print(res)
+
+
+if __name__ == '__main__':
+    pass
