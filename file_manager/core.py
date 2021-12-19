@@ -3,6 +3,8 @@ import shutil
 import datetime
 
 
+
+
 def create_file(name, text=None):
     with open(name, 'w', encoding='utf-8') as f:
         if text:
@@ -25,7 +27,7 @@ def get_list(folders_only=False):
 
 def delete_file(name):
     os.rmdir(name) if os.path.isdir(name) \
-        else os.remove('text.dat')
+        else os.remove(name)
 
 
 def copy_file(name, new_name):
@@ -40,7 +42,7 @@ def copy_file(name, new_name):
 
 def save_log(message):
     current_time = datetime.datetime.now()
-    res = f'{current_time} - {message}'
+    res = f"{current_time} - {message}"
     with open('log.txt', 'a', encoding="utf-8") as f:
         f.write(res + '\n')
 
