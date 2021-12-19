@@ -14,6 +14,14 @@ def create_folder(name):
         print('The folder with such name already exists.')
 
 
+def get_list(folders_only=False):
+    res = os.listdir()
+    if folders_only:
+        res = [f for f in res if os.path.isdir(f)]
+    print(res)
+
+
 if __name__ == '__main__':
     create_file('text.dat')
     create_folder('new_f')
+    get_list(folders_only=True)
